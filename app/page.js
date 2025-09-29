@@ -1,3 +1,5 @@
+"use client";
+import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -5,5 +7,25 @@ export default function Home() {
   const [expand, setExpand] = useState(false);
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
-  return <div>Home</div>;
+  return (
+    <div>
+      <div className="h-screen flex">
+        {/* -- scrollbar -- */}
+        <div>
+          <div>
+            <Image
+              className="rotate-180"
+              src={assets.menu_icon}
+              alt="Menu Icon"
+            />
+            <Image
+              className="opacity-70"
+              src={assets.chat_icon}
+              alt="Menu Icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
