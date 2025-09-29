@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <div className="h-screen flex">
         {/* -- scrollbar -- */}
-        <div>
+        <div className="flex-1 flex items-center justify-center flex-col px-4 pb-8 bg-[#292a2d] text-white relative">
           <div>
             <Image
               className="rotate-180"
