@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <div className="h-screen flex">
-        {/* -- scrollbar -- */}
+        {/* -- scrollbar for md screen sizes -- */}
         <div className="flex-1 flex items-center justify-center flex-col px-4 pb-8 bg-[#292a2d] text-white relative">
           <div className="md:hidden absolute px-4 top-6 flex items-center justify-between w-full">
             <Image
@@ -25,6 +25,17 @@ export default function Home() {
               alt="Menu Icon"
             />
           </div>
+          {messages.length === 0 ? (
+            <>
+              <div className="flex items-center gap-3">
+                <Image className="h-16" src={assets.logo_icon} />
+                <p className="text-2xl font-medium">Hi, I'm DeepSeek.</p>
+              </div>
+              <p className="text-sm mt-2">How can I help you today?</p>
+            </>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </div>
