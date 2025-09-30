@@ -20,7 +20,7 @@ const Sidebar = ({ expand, setExpand }) => {
             className={expand ? "w-36" : "w-10"}
           />
 
-          <div>
+          <div className="group relative flex items-center justify-center hover:bg-gray-500/20 transition-all duration-300 h-9 w-9 aspect-square rounded-lg cursor-pointer">
             <Image src={assets.menu_icon} className="md:hidden" />
             <Image
               src={expand ? assets.sidebar_close_icon : assets.sidebar_icon}
