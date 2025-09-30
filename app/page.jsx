@@ -36,6 +36,10 @@ export default function Home() {
           ) : (
             <div></div>
           )}
+          {/* Prompt box */}
+          <p className="text-xs absolute bottom-1 text-gray-500">
+            AI-generated | This is a clone made by Natnael Tamiru
+          </p>
         </div>
       </div>
     </div>
