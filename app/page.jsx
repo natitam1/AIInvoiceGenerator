@@ -18,7 +18,7 @@ export default function Home() {
               onClick={() => (expand ? setExpand(false) : setExpand(true))}
               className="rotate-180"
               src={assets.menu_icon}
-              alt="Menu Icon"
+              alt="Menu"
             />
             <Image
               className="opacity-70"

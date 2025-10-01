@@ -25,7 +25,7 @@ const Sidebar = ({ expand, setExpand }) => {
             onClick={() => (expand ? setExpand(false) : setExpand(true))}
             className="group relative flex items-center justify-center hover:bg-gray-500/20 transition-all duration-300 h-9 w-9 aspect-square rounded-lg cursor-pointer"
           >
-            <Image src={assets.menu_icon} className="md:hidden" />
+            <Image src={assets.menu_icon} alt="" className="md:hidden" />
             <Image
               alt=""
               src={expand ? assets.sidebar_close_icon : assets.sidebar_icon}
