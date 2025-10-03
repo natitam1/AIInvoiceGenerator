@@ -11,6 +11,10 @@ import { Toaster } from "react-hot-toast";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import AllInvoices from "./pages/Invoices/AllInvoices";
+import CreateInvoice from "./pages/Invoices/CreateInvoice";
+import InvoiceDetail from "./pages/Invoices/InvoiceDetail";
+import ProfilePage from "./pages/Profile/ProfilePage";
 
 const App = () => {
   return (
@@ -25,7 +29,7 @@ const App = () => {
           <Route path="/" element={<ProtectedRoute />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="invoices" element={<AllInvoices />} />
-            <Route path="invoices/new" element={<CreateInvoices />} />
+            <Route path="invoices/new" element={<CreateInvoice />} />
             <Route path="invoices/:id" element={<InvoiceDetail />} />
             <Route path="profile" element={<ProfilePage />} />
           </Route>
