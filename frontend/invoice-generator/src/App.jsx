@@ -9,6 +9,8 @@ import SignUp from "./pages/Auth/SignUp";
 import Login from "./pages/Auth/Login";
 import { Toaster } from "react-hot-toast";
 import LandingPage from "./pages/LandingPage/LandingPage";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import ProtectedRoute from "./components/auth/ProtectedRoute";
 
 const App = () => {
   return (
@@ -19,6 +21,14 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          {/* protected routes */}
+          <Route path="/" element={<ProtectedRoute />}>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="invoices" element={<AllInvoices />} />
+            <Route path="invoices/new" element={<CreateInvoices />} />
+            <Route path="invoices/:id" element={<InvoiceDetail />} />
+            <Route path="profile" element={<ProfilePage />} />
+          </Route>
 
           {/* Catch all route */}
           <Route path="*" element={<Navigate to="/" replace />} />
