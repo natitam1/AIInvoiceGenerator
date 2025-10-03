@@ -2,6 +2,7 @@ import React from "react";
 import { Navigate, Route, Router, Routes } from "react-router-dom";
 import SignUp from "./pages/Auth/SignUp";
 import Login from "./pages/Auth/Login";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -17,6 +18,14 @@ const App = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
+      <Toaster
+        toastOptions={{
+          className: "",
+          style: {
+            fontSize: "13px",
+          },
+        }}
+      />
     </div>
   );
 };
