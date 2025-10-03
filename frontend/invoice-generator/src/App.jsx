@@ -1,5 +1,10 @@
 import React from "react";
-import { Navigate, Route, Router, Routes } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import SignUp from "./pages/Auth/SignUp";
 import Login from "./pages/Auth/Login";
 import { Toaster } from "react-hot-toast";
