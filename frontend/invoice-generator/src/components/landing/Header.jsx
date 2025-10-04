@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
 
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const user = { name: "Natnael", email: "natitam@exmple.com" };
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const Header = () => {
             </a>
           </div>
           {isAuthenticated ? (
-            <></>
+            <>Get Started</>
           ) : (
             <>
               <div className="hidden lg:flex lg:items-center lg:space-x-5">
