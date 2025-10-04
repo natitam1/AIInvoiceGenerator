@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FileText, LogOut, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import ProfileDropdown from "../layout/ProfileDropdown";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,9 +63,9 @@ const Header = () => {
                 setProfileDropdownOpen(!profileDropdownOpen);
               }}
               avatar={user?.avatar || ""}
-              company={user?.name || ""}
+              companyName={user?.name || ""}
               email={user?.email || ""}
-              onLogout={Logout}
+              // onLogout={logout}
             />
           ) : (
             <>
