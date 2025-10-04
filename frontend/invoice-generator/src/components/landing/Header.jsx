@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FileText, Menu, X } from "lucide-react";
+import { FileText, LogOut, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -61,6 +61,10 @@ const Header = () => {
                 e.stopPropagation();
                 setProfileDropdownOpen(!profileDropdownOpen);
               }}
+              avatar={user?.avatar || ""}
+              company={user?.name || ""}
+              email={user?.email || ""}
+              onLogout={Logout}
             />
           ) : (
             <>
