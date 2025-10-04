@@ -9,7 +9,7 @@ const Header = () => {
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
 
   const isAuthenticated = true;
-  const user = { name: "Natnael", email: "natitam@exmple.com" };
+  const user = { name: "Natnael", email: "natitaasdfsdfam@exmple.com" };
 
   useEffect(() => {
     const handleScroll = () => {
