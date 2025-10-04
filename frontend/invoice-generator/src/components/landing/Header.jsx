@@ -10,7 +10,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
 
-  const isAuthenticated = true;
+  const isAuthenticated = false;
   const user = { name: "Natnael", email: "natitaasdfsdfam@exmple.com" };
 
   useEffect(() => {
@@ -136,12 +136,12 @@ const Header = () => {
               <>
                 <Link
                   to="/login"
-                  className="block px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200"
+                  className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200"
                 >
                   Login
                 </Link>
-                <Link className="transition-all duration-200 font-medium rounded-lg text-white hover:bg-gray-800 bg-gray-900 text-left w-full block">
-                  Sign up
+                <Link className="transition-all duration-200 font-medium px-4 py-3 rounded-lg text-white hover:bg-gray-800 bg-gray-900 text-left w-full block">
+                  Sign Up
                 </Link>
               </>
             )}
