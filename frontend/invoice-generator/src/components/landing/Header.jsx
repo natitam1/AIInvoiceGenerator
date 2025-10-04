@@ -55,7 +55,13 @@ const Header = () => {
             </a>
           </div>
           {isAuthenticated ? (
-            <>Get Started</>
+            <ProfileDropdown
+              isOpen={profileDropdownOpen}
+              onToggle={(e) => {
+                e.stopPropagation();
+                setProfileDropdownOpen(!profileDropdownOpen);
+              }}
+            />
           ) : (
             <>
               <div className="hidden lg:flex lg:items-center lg:space-x-5">
